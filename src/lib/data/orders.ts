@@ -85,7 +85,7 @@ export const getReturns = async () => {
     .catch((err) => medusaError(err))
 }
 
-export const retriveReturnMethods = async (order_id: string) => {
+export const retrieveReturnMethods = async (order_id: string) => {
   const headers = await getAuthHeaders()
 
   return sdk.client
