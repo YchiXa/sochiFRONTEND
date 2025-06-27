@@ -36,7 +36,7 @@ export const RegisterForm = () => {
 }
 
 const Form = () => {
-  const [error, setError] = useState()
+  const [error, setError] = useState<string | null>(null)
   const {
     handleSubmit,
     register,
