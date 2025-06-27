@@ -2,7 +2,7 @@ import { OrderReturnSection } from "@/components/sections/OrderReturnSection/Ord
 import {
   retrieveOrder,
   retrieveReturnReasons,
-  retriveReturnMethods,
+  retrieveReturnMethods,
 } from "@/lib/data/orders"
 
 export default async function ReturnOrderPage({
@@ -14,7 +14,7 @@ export default async function ReturnOrderPage({
 
   const order = (await retrieveOrder(id)) as any
   const returnReasons = await retrieveReturnReasons()
-  const returnMethods = await retriveReturnMethods(id)
+  const returnMethods = await retrieveReturnMethods(id)
 
   return (
     <main className="container">
